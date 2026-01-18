@@ -1,0 +1,4 @@
+#include "SwiftyRSA-Shared.xcconfig"
+
+SWIFT_OPTIMIZATION_LEVEL = -O
+

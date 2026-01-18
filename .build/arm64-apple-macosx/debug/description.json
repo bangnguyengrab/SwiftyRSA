@@ -1,0 +1,383 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SwiftyRSA-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode_16_0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/sources",
+      "importPath" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Asn1Parser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/ClearMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Data+SHA.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/EncryptedMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Key.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Message.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/PrivateKey.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/PublicKey.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Signature.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA+ObjC.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSAError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/X509Certificate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/swift-version--D93DDC4032DAA99.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftyRSA",
+      "moduleOutputPath" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/Modules/SwiftyRSA.swiftmodule",
+      "objects" : [
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Asn1Parser.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/ClearMessage.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Data+SHA.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/EncryptedMessage.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Key.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Message.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PrivateKey.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PublicKey.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Signature.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA+ObjC.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSAError.swift.o",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/X509Certificate.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA-Swift.h",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+        "-F",
+        "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Asn1Parser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/ClearMessage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Data+SHA.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/EncryptedMessage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Key.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Message.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PrivateKey.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PublicKey.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Signature.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA+ObjC.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSAError.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/X509Certificate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/Modules/SwiftyRSA.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/Asn1Parser.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/ClearMessage.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/Data+SHA.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/EncryptedMessage.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/Key.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/Message.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/PrivateKey.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/PublicKey.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/Signature.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA+ObjC.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSAError.swift",
+        "/Users/sajal.gupta/ws/SwiftyRSA/Source/X509Certificate.swift"
+      ],
+      "tempsPath" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SwiftyRSA" : [
+      "/Applications/Xcode_16_0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SwiftyRSA",
+      "-incremental",
+      "-c",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/Asn1Parser.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/ClearMessage.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/Data+SHA.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/EncryptedMessage.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/Key.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/Message.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/PrivateKey.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/PublicKey.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/Signature.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA+ObjC.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSAError.swift",
+      "/Users/sajal.gupta/ws/SwiftyRSA/Source/X509Certificate.swift",
+      "-I",
+      "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA-Swift.h",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+      "-F",
+      "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode_16_0.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode_16_0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SwiftyRSA" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "writeCommands" : {
+    "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Asn1Parser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/ClearMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Data+SHA.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/EncryptedMessage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Key.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Message.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/PrivateKey.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/PublicKey.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/Signature.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA+ObjC.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSAError.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/sajal.gupta/ws/SwiftyRSA/Source/X509Certificate.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/sources"
+    },
+    "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/swift-version--D93DDC4032DAA99.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode_16_0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/swift-version--D93DDC4032DAA99.txt"
+    }
+  }
+}

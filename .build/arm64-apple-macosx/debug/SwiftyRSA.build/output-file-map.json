@@ -1,0 +1,83 @@
+{
+  "": {
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/master.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/Asn1Parser.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Asn1Parser.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Asn1Parser.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Asn1Parser~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Asn1Parser.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/ClearMessage.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/ClearMessage.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/ClearMessage.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/ClearMessage~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/ClearMessage.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/Data+SHA.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Data+SHA.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Data+SHA.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Data+SHA~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Data+SHA.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/EncryptedMessage.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/EncryptedMessage.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/EncryptedMessage.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/EncryptedMessage~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/EncryptedMessage.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/Key.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Key.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Key.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Key~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Key.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/Message.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Message.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Message.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Message~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Message.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/PrivateKey.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PrivateKey.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PrivateKey.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PrivateKey~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PrivateKey.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/PublicKey.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PublicKey.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PublicKey.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PublicKey~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/PublicKey.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/Signature.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Signature.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Signature.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Signature~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/Signature.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA+ObjC.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA+ObjC.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA+ObjC.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA+ObjC~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA+ObjC.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSA.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/SwiftyRSAError.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSAError.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSAError.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSAError~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSAError.swiftdeps"
+  },
+  "/Users/sajal.gupta/ws/SwiftyRSA/Source/X509Certificate.swift": {
+    "dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/X509Certificate.d",
+    "object": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/X509Certificate.swift.o",
+    "swiftmodule": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/X509Certificate~partial.swiftmodule",
+    "swift-dependencies": "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/X509Certificate.swiftdeps"
+  }
+}

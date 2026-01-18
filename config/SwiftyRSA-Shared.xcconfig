@@ -1,0 +1,7 @@
+// SwiftyRSA Shared Configuration
+// Library Evolution enabled via build settings (not unsafeFlags)
+
+BUILD_LIBRARY_FOR_DISTRIBUTION = YES
+OTHER_SWIFT_FLAGS = $(inherited) -Xfrontend -enable-library-evolution
+SWIFT_COMPILATION_MODE = wholemodule
+

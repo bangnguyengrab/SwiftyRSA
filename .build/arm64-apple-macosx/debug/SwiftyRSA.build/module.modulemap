@@ -1,0 +1,4 @@
+module SwiftyRSA {
+    header "/Users/sajal.gupta/ws/SwiftyRSA/.build/arm64-apple-macosx/debug/SwiftyRSA.build/SwiftyRSA-Swift.h"
+    requires objc
+}

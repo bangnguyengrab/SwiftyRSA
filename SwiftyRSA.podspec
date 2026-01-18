@@ -23,6 +23,12 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "11.0"
   s.watchos.deployment_target = "4.3"
 
+  # Library Evolution enabled via build settings (not unsafeFlags)
+  s.xcconfig = {
+    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
+    'OTHER_SWIFT_FLAGS' => '$(inherited) -Xfrontend -enable-library-evolution'
+  }
+
   s.subspec "ObjC" do |sp|
     sp.source_files = "Source/*.{swift,m,h}"
   end
