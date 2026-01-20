@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
@@ -14,6 +14,10 @@ let package = Package(
         .target(
             name: "SwiftyRSA",
             dependencies: [],
-            path: "Source")
+            path: "Source",
+            buildSettings: [
+                .init("BUILD_LIBRARY_FOR_DISTRIBUTION", to: "YES"),
+                .init("OTHER_SWIFT_FLAGS", to: "$(inherited) -Xfrontend -enable-library-evolution")
+            ])
     ]
 )
