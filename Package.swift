@@ -14,9 +14,6 @@ let package = Package(
         .target(
             name: "SwiftyRSA",
             dependencies: [],
-            path: "Source",
-            swiftSettings: [
-                .unsafeFlags(["-Xfrontend", "-enable-library-evolution"])
-            ])
+            path: "Source")
     ]
 )
