@@ -17,7 +17,10 @@ Pod::Spec.new do |s|
   s.exclude_files = "Source/SwiftyRSA+ObjC.swift"
   s.framework = "Security"
   s.requires_arc = true
-  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
+  s.pod_target_xcconfig = { 
+  'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
+  'OTHER_SWIFT_FLAGS' => '$(inherited) -Xfrontend -enable-library-evolution'
+}
 
   s.swift_version = "5.0"
   s.ios.deployment_target = "10.0"
