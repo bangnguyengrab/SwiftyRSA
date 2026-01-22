@@ -10,7 +10,7 @@ let package = Package(
   products: [
     .library(
       name: "SwiftyRSA",
-      // remove 'type: .dynamic' because the XCFramework binary determines its own linking type.
+      // removed 'type: .dynamic' because the XCFramework binary determines its own linking type.
       targets: ["SwiftyRSA"]
     ),
   ],
@@ -19,8 +19,8 @@ let package = Package(
     // Switch to Binary Target to enforce Library Evolution (LE) support
     .binaryTarget(
       name: "SwiftyRSA",
-      url: "https://github.com/bangnguyengrab/SwiftyRSA/releases/download/1.8.4/SwiftyRSA.xcframework.zip",
-      checksum: "6f1a840bef0deebecb7b24767f54b75ddf650eb54f493289111b8eb213d0f749"
+      url: "https://github.com/bangnguyengrab/SwiftyRSA/releases/download/1.8.8/SwiftyRSA.xcframework.zip",
+      checksum: "456efe912de830d5cb5d938cc4fdfc2837cba4fa79b86d61fcdf5c335c4f5a61"
     )
   ]
 )
