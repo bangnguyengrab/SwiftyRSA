@@ -20,7 +20,7 @@ let package = Package(
     .binaryTarget(
       name: "SwiftyRSA",
       url: "https://github.com/bangnguyengrab/SwiftyRSA/releases/download/1.8.8/SwiftyRSA.xcframework.zip",
-      checksum: "ea395e1aceb383abab2cfcefcdc7e4cffad3dd72bc872262a3ca282e6d6e38c9"
+      checksum: "edf234dc52460a987eed26b22ee591dab7096b9f9bdca77470ce8e83d73c1be6"
     )
   ]
 )
