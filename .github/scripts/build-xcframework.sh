@@ -220,9 +220,13 @@ if [ ! -f "${XCFRAMEWORK_PATH}/Info.plist" ]; then
 fi
 
 # Check that we have at least one platform slice
-PLATFORM_COUNT=$(find "${XCFRAMEWORK_PATH}" -maxdepth 1 -type d -name "*.framework" | wc -l | tr -d ' ')
+# XCFramework structure: SwiftyRSA.xcframework/ios-arm64/SwiftyRSA.framework
+# So we look for .framework directories inside platform directories
+PLATFORM_COUNT=$(find "${XCFRAMEWORK_PATH}" -mindepth 2 -maxdepth 2 -type d -name "*.framework" | wc -l | tr -d ' ')
 if [ "$PLATFORM_COUNT" -eq 0 ]; then
     echo -e "${RED}❌ Error: XCFramework contains no platform slices${NC}"
+    echo "XCFramework structure:"
+    ls -la "${XCFRAMEWORK_PATH}" || true
     exit 1
 fi
 echo -e "${GREEN}✅ XCFramework structure validated (${PLATFORM_COUNT} platform slice(s))${NC}"
