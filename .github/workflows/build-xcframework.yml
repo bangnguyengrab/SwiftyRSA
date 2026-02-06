@@ -3,9 +3,7 @@ name: Build XCFramework
 on:
   push:
     tags:
-      - '*'  # Triggers on any tag push (git push origin <tag>)
-  create:
-    ref_type: tag  # Triggers when tag is created via GitHub UI
+      - '*'  # Triggers on any tag push (covers both git push and GitHub UI tag creation)
 
 jobs:
   build-xcframework:
@@ -26,13 +24,8 @@ jobs:
             VERSION=${GITHUB_REF#refs/tags/}
             echo "version=$VERSION" >> $GITHUB_OUTPUT
             echo "Tag version: $VERSION"
-          elif [[ "${{ github.event.ref_type }}" == "tag" ]]; then
-            # Handle create event
-            VERSION="${{ github.event.ref }}"
-            echo "version=$VERSION" >> $GITHUB_OUTPUT
-            echo "Tag version: $VERSION"
           else
-            echo "Error: Not a tag ref"
+            echo "Error: Not a tag ref: ${{ github.ref }}"
             exit 1
           fi
       
