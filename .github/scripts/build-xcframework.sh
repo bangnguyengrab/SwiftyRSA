@@ -4,8 +4,30 @@
 # Adapted for GitHub Actions CI - no cloning needed, uses checked-out code
 # METHOD: Brute-force text replacement (The "Nuclear Option")
 # This is required because the compiler flag failed to fix _objc_ types.
+#
+# Usage: ./build-xcframework.sh <version>
+# Example: ./build-xcframework.sh 1.8.0
+#
+# Environment Variables:
+#   FRAMEWORK_NAME: Name of the framework (default: SwiftyRSA)
+#   SCHEME_NAME: Xcode scheme name (default: "SwiftyRSA iOS")
 
 set -euo pipefail  # Exit on error, undefined vars, pipe failures
+
+# Cleanup function for temporary directories
+cleanup() {
+    local exit_code=$?
+    if [ -n "${TEMP_DIRS:-}" ]; then
+        echo "Cleaning up temporary directories..."
+        for temp_dir in $TEMP_DIRS; do
+            [ -d "$temp_dir" ] && rm -rf "$temp_dir" || true
+        done
+    fi
+    exit $exit_code
+}
+
+# Register cleanup trap
+trap cleanup EXIT INT TERM
 
 # Get version from argument (passed from GitHub Actions)
 VERSION="${1:-}"
@@ -16,12 +38,16 @@ if [ -z "$VERSION" ]; then
 fi
 
 FRAMEWORK_NAME="${FRAMEWORK_NAME:-SwiftyRSA}"
+SCHEME_NAME="${SCHEME_NAME:-SwiftyRSA iOS}"
 
 # Use current directory (already checked out in CI)
 REPO_DIR="$(pwd)"
 BUILD_DIR="${REPO_DIR}/build"
 OUTPUT_DIR="${BUILD_DIR}/${FRAMEWORK_NAME}"
 PROJECT_FILE="${REPO_DIR}/${FRAMEWORK_NAME}.xcodeproj"
+
+# Track temporary directories for cleanup
+TEMP_DIRS=""
 
 # Colors for output
 GREEN='\033[0;32m'
@@ -111,11 +137,15 @@ sanitize_interface() {
 build_framework() {
     local platform=$1
     local destination=$2
-    local scheme_name="SwiftyRSA iOS"
+    local scheme_name="${SCHEME_NAME}"
     local derived_data=$(mktemp -d)
+    
+    # Track for cleanup on error
+    TEMP_DIRS="${TEMP_DIRS} ${derived_data}"
     
     echo -e "${GREEN}🔨 Building for ${platform}...${NC}"
     echo "Destination: ${destination}"
+    echo "Scheme: ${scheme_name}"
     echo "Derived Data: ${derived_data}"
     
     # Archive
@@ -151,7 +181,11 @@ build_framework() {
         rm -rf "${derived_data}"
         exit 1
     fi
+    
+    # Cleanup successful build (trap handles failures)
     rm -rf "${derived_data}"
+    # Remove from cleanup list since we cleaned it up
+    TEMP_DIRS=$(echo "$TEMP_DIRS" | sed "s|${derived_data}||" | tr -s ' ')
 }
 
 # 1. Build iOS Device
@@ -177,6 +211,21 @@ if [ ! -d "$XCFRAMEWORK_PATH" ]; then
     echo -e "${RED}❌ Error: XCFramework was not created at ${XCFRAMEWORK_PATH}${NC}"
     exit 1
 fi
+
+# Validate XCFramework structure
+echo -e "${BLUE}🔍 Validating XCFramework structure...${NC}"
+if [ ! -f "${XCFRAMEWORK_PATH}/Info.plist" ]; then
+    echo -e "${RED}❌ Error: XCFramework Info.plist not found${NC}"
+    exit 1
+fi
+
+# Check that we have at least one platform slice
+PLATFORM_COUNT=$(find "${XCFRAMEWORK_PATH}" -maxdepth 1 -type d -name "*.framework" | wc -l | tr -d ' ')
+if [ "$PLATFORM_COUNT" -eq 0 ]; then
+    echo -e "${RED}❌ Error: XCFramework contains no platform slices${NC}"
+    exit 1
+fi
+echo -e "${GREEN}✅ XCFramework structure validated (${PLATFORM_COUNT} platform slice(s))${NC}"
 
 # 4. Zip & Checksum
 echo -e "${BLUE}📦 Creating zip archive...${NC}"

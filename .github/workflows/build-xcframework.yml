@@ -47,6 +47,7 @@ jobs:
           .github/scripts/build-xcframework.sh "${{ steps.tag_version.outputs.version }}"
         env:
           FRAMEWORK_NAME: SwiftyRSA
+          SCHEME_NAME: SwiftyRSA iOS
       
       - name: Verify build artifacts
         run: |
@@ -87,6 +88,33 @@ jobs:
             echo "checksum=$CHECKSUM" >> $GITHUB_OUTPUT
             echo "Checksum: $CHECKSUM"
           fi
+      
+      - name: Check if release already exists
+        id: check_release
+        run: |
+          VERSION="${{ steps.tag_version.outputs.version }}"
+          # Check if release exists for this tag using GitHub API
+          RELEASE_EXISTS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ github.repository }}/releases/tags/${VERSION}")
+          
+          if [ "$RELEASE_EXISTS" = "200" ]; then
+            echo "⚠️  Error: Release for tag $VERSION already exists!"
+            echo ""
+            echo "To create a new release, please use a new version tag:"
+            echo "  - If last release was 1.8.0, use 1.8.1"
+            echo "  - If last release was 1.8.1, use 1.8.2"
+            echo "  - Or use semantic versioning: 1.9.0, 2.0.0, etc."
+            echo ""
+            echo "Example:"
+            echo "  git tag 1.8.1"
+            echo "  git push origin 1.8.1"
+            exit 1
+          else
+            echo "✅ No existing release found for tag $VERSION - proceeding with release creation"
+          fi
+        continue-on-error: false
       
       - name: Create Release and Upload XCFramework
         uses: softprops/action-gh-release@v1
